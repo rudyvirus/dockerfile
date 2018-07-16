@@ -2,9 +2,10 @@
 pipeline {
       agent any
      stages {
-          stage ('Dockerfile')
+          stage ('Dockerfile') {
               steps {
                       docker build -t .
-     }
-   }
+         }
+      }
+    }
 }
